@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Disolve
-  m_Shader: {fileID: -6465566751694194690, guid: 22e4e9d324c66d54e86f88ecfeb2a0db, type: 3}
+  m_Name: Shader Graphs_Distortion
+  m_Shader: {fileID: -6465566751694194690, guid: 2562865becc1e714ea3a92d651742016, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,6 +24,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Distortion_Map_Normal:
+        m_Texture: {fileID: 2800000, guid: 9ae13c909d9484e4eb0aa286d6774fd8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -38,16 +42,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Disolve_Amount: 0.315
-    - _Edge_Width: 0.05
-    - _Noise_Scale: 15
+    - _Distortion_Strength: 0.05
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Edge_Color: {r: 0.83018863, g: 0, b: 0.023425695, a: 1}
+    - _Scroll_Speed: {r: 0.05, g: 0.03, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &908090919450569519
+--- !u!114 &3071017479463933504
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
